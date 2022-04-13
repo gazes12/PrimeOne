@@ -1,0 +1,7 @@
+@mixin placeholder(){
+  &:focus{
+  	&::placeholder{
+  		opacity: 0;
+  	}
+  }
+}

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap'); /*font-family: 'Bebas Neue', cursive; font-family: 'PT Sans', sans-serif;*/
+
+@font-face {
+    font-family: 'Akzidenz-Grotesk BQ';
+    src: url('../fonts/AkzidenzGroteskBQ-BdCnd.eot');
+    src: url('../fonts/AkzidenzGroteskBQ-BdCnd.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AkzidenzGroteskBQ-BdCnd.woff2') format('woff2'),
+        url('../fonts/AkzidenzGroteskBQ-BdCnd.woff') format('woff'),
+        url('../fonts/AkzidenzGroteskBQ-BdCnd.ttf') format('truetype'),
+        url('../fonts/AkzidenzGroteskBQ-BdCnd.svg#AkzidenzGroteskBQ-BdCnd') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@import url('../css/header.css');
+@import url('../css/main.css');
+@import url('../css/footer.css');
+@import url('../css/classes.css');
+
+$fontSize: 15px;
+$fontFamily: 'PT Sans';
+$color: #000;
+
+$mw: 800px;
+$md1: 991.98px;
+$md2: 767.98px;
+$md3: 479.98px;
+
+._container{
+	max-width: $mw + 30px;
+	margin: 0 auto;
+	padding: 0 15px;
+	
+	@media(max-width: $md1){
+		max-width: 750px;
+	}
+	@media(max-width: $md2){
+		max-width: none;
+	}
+}
+
+body{
+	font-size: $fontSize;
+	font-family: $fontFamily;
+	color: $color;
+	&.lock{
+		overflow: hidden;
+	}	
+}
+
+*,
+*::after,
+*::before{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul,ol,li{
+	list-style: none;
+}
+
+img{
+	vertical-align: top;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+html,body{
+	height: 100%;
+	line-height: 1;
+}
+
+.wrapper{
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}

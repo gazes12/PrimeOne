@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap");
+/*font-family: 'Bebas Neue', cursive; font-family: 'PT Sans', sans-serif;*/
+@import url("../css/header.css");
+@import url("../css/main.css");
+@import url("../css/footer.css");
+@import url("../css/classes.css");
+@font-face {
+  font-family: "Akzidenz-Grotesk BQ";
+  src: url("../fonts/AkzidenzGroteskBQ-BdCnd.eot");
+  src: url("../fonts/AkzidenzGroteskBQ-BdCnd.eot?#iefix") format("embedded-opentype"), url("../fonts/AkzidenzGroteskBQ-BdCnd.woff2") format("woff2"), url("../fonts/AkzidenzGroteskBQ-BdCnd.woff") format("woff"), url("../fonts/AkzidenzGroteskBQ-BdCnd.ttf") format("truetype"), url("../fonts/AkzidenzGroteskBQ-BdCnd.svg#AkzidenzGroteskBQ-BdCnd") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+._container {
+  max-width: 830px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (max-width: 991.98px) {
+  ._container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767.98px) {
+  ._container {
+    max-width: none;
+  }
+}
+
+body {
+  font-size: 15px;
+  font-family: "PT Sans";
+  color: #000;
+}
+body.lock {
+  overflow: hidden;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html, body {
+  height: 100%;
+  line-height: 1;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0px 21px;
+  height: 50px;
+  white-space: nowrap;
+  font-family: "Bebas Neue";
+  letter-spacing: 3px;
+  font-size: 18px;
+  background: #000;
+  color: #fff;
+  line-height: 50px;
+  letter-spacing: 3px;
+}
+
+.btn--w {
+  background: #fff;
+  color: #000;
+}
+
+.link {
+  color: #000;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-family: "Bebas Neue";
+}
+
+.input {
+  border: 2px solid #959595;
+  height: 50px;
+  width: 100%;
+  background: #252525;
+  color: #959595;
+  padding: 0px 18px;
+}
+.input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+.input:focus::-moz-placeholder {
+  opacity: 0;
+}
+.input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+.input:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+.input:focus::placeholder {
+  opacity: 0;
+}
+
+textarea.input {
+  resize: none;
+  padding: 10px 18px;
+  height: 100px;
+}
+
+.title-big {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Akzidenz-Grotesk BQ";
+  letter-spacing: 5px;
+  font-size: 50px;
+  display: block;
+}
+@media (max-width: 479.98px) {
+  .title-big {
+    font-size: 30px;
+  }
+}
+
+.title-small {
+  color: #000;
+  text-transform: uppercase;
+  font-family: "Akzidenz-Grotesk BQ";
+  letter-spacing: 5px;
+  font-size: 25px;
+  display: block;
+}
+
+.title-black {
+  color: #000;
+}
+
+.title-white {
+  color: #fff;
+}
